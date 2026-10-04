@@ -5596,7 +5596,7 @@
               <span class="setup-btn-icon">⭐</span>
               <span class="setup-btn-text">
                 <span class="setup-btn-label">Difficulty</span>
-                <span class="setup-btn-value" id="setup-val-diff">Easy</span>
+                <span class="setup-btn-value" id="setup-val-diff">Hard</span>
               </span>
               <span class="setup-btn-chevron">›</span>
             </button>
@@ -5604,7 +5604,7 @@
               <span class="setup-btn-icon">⌨️</span>
               <span class="setup-btn-text">
                 <span class="setup-btn-label">Keys</span>
-                <span class="setup-btn-value" id="setup-val-keys">10 keys selected</span>
+                <span class="setup-btn-value" id="setup-val-keys">39 keys selected</span>
               </span>
               <span class="setup-btn-chevron">›</span>
             </button>
@@ -5724,9 +5724,9 @@
             </div>
             <div class="setup-panel-section" id="panel-diff-sp">
               <div class="diff-row" id="diff-row-sp">
-                <button class="diff-btn selected" data-diff="easy">🌱 Easy</button>
+                <button class="diff-btn" data-diff="easy">🌱 Easy</button>
                 <button class="diff-btn" data-diff="medium">⭐ Medium</button>
-                <button class="diff-btn" data-diff="hard">🔥 Hard</button>
+                <button class="diff-btn selected" data-diff="hard">🔥 Hard</button>
               </div>
             </div>
             <div class="setup-panel-section" id="panel-keys-sp">
@@ -10934,7 +10934,7 @@ const pauseSpace = (function(){
   }
   buildDemoRow(ITYPES, 'milkyway');
 
-  let difficulty = 'easy';
+  let difficulty = 'hard';
   diffRow.querySelectorAll('.diff-btn').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       diffRow.querySelectorAll('.diff-btn').forEach(b=>b.classList.remove('selected'));
@@ -10944,7 +10944,7 @@ const pauseSpace = (function(){
     });
   });
 
-  // Home Row is pre-selected by default so the player can Launch! right
+  // All Keys is pre-selected by default so the player can Launch! right
   // away; they can still swap in any other preset/combo of individual keys.
   const keyFilter = createKeyFilter(
     document.getElementById('kf-board-sp'),
@@ -10954,7 +10954,7 @@ const pauseSpace = (function(){
       startBtn.textContent = count === 0 ? 'Pick your keys first!' : 'Launch!';
       updateSetupSummary('keys', count === 0 ? 'Pick your keys' : count + ' key' + (count===1?'':'s') + ' selected');
     },
-    'home'
+    'all'
   );
   let LEVELS = buildLevels(keyFilter.getSelected());
 
