@@ -1630,11 +1630,11 @@
     box-shadow:0 14px 40px rgba(0,0,0,0.55), 0 0 0 2px rgba(46,125,107,0.45), 0 0 28px rgba(232,196,104,0.4);
   }
   #view-space .level-popup-card.world-ruins .level-popup-title{ color:#E8C468; text-shadow:0 0 16px rgba(232,196,104,0.7); }
-  #view-space .level-popup-card.world-Joan's{
+  #view-space .level-popup-card.world-joans{
     background: radial-gradient(circle at 50% 20%, rgba(107,63,160,0.28), transparent 60%), #170B26;
     box-shadow:0 14px 40px rgba(0,0,0,0.55), 0 0 0 2px rgba(124,255,168,0.45), 0 0 28px rgba(107,63,160,0.4);
   }
-  #view-space .level-popup-card.world-Joan's .level-popup-title{ color:#9AFFC0; text-shadow:0 0 16px rgba(124,255,168,0.7); }
+  #view-space .level-popup-card.world-joans .level-popup-title{ color:#9AFFC0; text-shadow:0 0 16px rgba(124,255,168,0.7); }
   #view-space .level-popup-card.world-carnival{
     background: radial-gradient(circle at 50% 20%, rgba(255,92,138,0.28), transparent 60%), #2E0A16;
     box-shadow:0 14px 40px rgba(0,0,0,0.55), 0 0 0 2px rgba(255,209,102,0.45), 0 0 28px rgba(255,92,138,0.4);
@@ -2633,7 +2633,7 @@
   .world-btn[data-world="ashfallwastes"]{ --sw1:#C9C4BC; --sw2:#FF6B35; }
   .world-btn[data-world="crystalcaverns"]{ --sw1:#FFD6F5; --sw2:#9C4DCC; }
   .world-btn[data-world="ruins"]{ --sw1:#E8C468; --sw2:#2E7D6B; }
-  .world-btn[data-world="Joan's"]{ --sw1:#9AFFC0; --sw2:#5B2E8C; }
+  .world-btn[data-world="joans"]{ --sw1:#9AFFC0; --sw2:#5B2E8C; }
   .world-btn[data-world="carnival"]{ --sw1:#FFD166; --sw2:#FF5C8A; }
   .world-btn[data-world="steampunk"]{ --sw1:#D9A05B; --sw2:#4A90A4; }
   .world-btn[data-world="biocave"]{ --sw1:#6BFFC0; --sw2:#2ED9C3; }
@@ -3389,18 +3389,18 @@
     border-color: rgba(46,125,107,0.5);
   }
   /* Joan's Manor world: a gloomy moon with sickly green ghost-light. */
-  .planet.Joan's-look{
+  .planet.joans-look{
     background: radial-gradient(circle at 35% 35%, #B9FFD1, #4E2E7A 55%, #170B26 100%);
     box-shadow:0 0 34px 10px rgba(124,255,168,0.45), inset -10px -8px 18px rgba(0,0,0,0.5);
-    animation: Joan's-flicker 2.2s ease-in-out infinite;
+    animation: joans-flicker 2.2s ease-in-out infinite;
   }
-  @keyframes Joan's-flicker{
+  @keyframes joans-flicker{
     0%,80%,100%{ filter:brightness(1); }
     82%{ filter:brightness(0.6); }
     84%{ filter:brightness(1.1); }
     86%{ filter:brightness(0.7); }
   }
-  .planet.Joan's-look::after{
+  .planet.joans-look::after{
     border-color: rgba(124,255,168,0.5);
   }
   /* Carnival Nightmare world: a striped big-top moon glowing under string lights. */
@@ -3611,7 +3611,7 @@
   #game-space.world-ashfallwastes{ --star-color:#C9C4BC; --space-bg: linear-gradient(180deg, #2A2622 0%, #14120F 55%, #060505 100%); }
   #game-space.world-crystalcaverns{ --star-color:#FFB8F0; --space-bg: linear-gradient(180deg, #2A0A38 0%, #180620 55%, #0A0210 100%); }
   #game-space.world-ruins{ --star-color:#E8C468; --space-bg: linear-gradient(180deg, #241C08 0%, #140F04 55%, #0A0702 100%); }
-  #game-space.world-Joan's{ --star-color:#7CFFA8; --space-bg: linear-gradient(180deg, #170B26 0%, #0A0512 55%, #030108 100%); }
+  #game-space.world-joans{ --star-color:#7CFFA8; --space-bg: linear-gradient(180deg, #170B26 0%, #0A0512 55%, #030108 100%); }
   #game-space.world-carnival{ --star-color:#FF5C8A; --space-bg: linear-gradient(180deg, #2E0A16 0%, #1A0510 55%, #0A0208 100%); }
   #game-space.world-steampunk{ --star-color:#D9A05B; --space-bg: linear-gradient(180deg, #2A1608 0%, #180C04 55%, #0A0502 100%); }
   #game-space.world-biocave{ --star-color:#6BFFC0; --space-bg: linear-gradient(180deg, #0A1F2E 0%, #05121C 55%, #02080D 100%); }
@@ -3998,27 +3998,27 @@
     background-size:245px 285px;
   }
   /* Joan's Manor: far = drifting green fog wisps, near = fluttering bat shapes. */
-  .world-parallax-layer.pfar-Joan's{
+  .world-parallax-layer.pfar-joans{
     background-image:
       radial-gradient(65px 42px at 24% 28%, rgba(124,255,168,0.16), transparent 70%),
       radial-gradient(90px 50px at 68% 60%, rgba(91,46,140,0.20), transparent 70%),
       radial-gradient(55px 65px at 45% 88%, rgba(154,255,192,0.12), transparent 70%);
     background-size:340px 340px;
   }
-  .world-parallax-layer.pnear-Joan's{
+  .world-parallax-layer.pnear-joans{
     background-image:
       radial-gradient(circle at 50% 50%, rgba(154,255,192,0.4) 0 5px, rgba(91,46,140,0.5) 5px 6px, transparent 8px),
       radial-gradient(circle at 50% 50%, rgba(124,255,168,0.35) 0 3px, rgba(23,11,38,0.6) 3px 4px, transparent 6px);
     background-size:250px 230px, 160px 290px;
     background-position:40px 30px, 180px 150px;
   }
-  .world-parallax-layer.pclose-Joan's{
+  .world-parallax-layer.pclose-joans{
     background-image:
       radial-gradient(circle at 50% 50%, rgba(23,11,38,0.85) 0 11px, rgba(124,255,168,0.5) 11px 14px, transparent 16px);
     background-size:420px 460px;
     background-position:100px 90px;
   }
-  .world-parallax-layer.pfg-Joan's{
+  .world-parallax-layer.pfg-joans{
     background-image:
       radial-gradient(2px 2px at 20% 26%, rgba(154,255,192,0.9), transparent),
       radial-gradient(1.5px 1.5px at 62% 58%, rgba(124,255,168,0.85), transparent),
@@ -4270,21 +4270,21 @@
   }
   /* Joan's Manor: a pale ghostly moon with drifting will-o'-wisps rising
      from below, like restless spirits. */
-  .world-signature.sig-Joan's{
+  .world-signature.sig-joans{
     top:8%; left:12%; width:min(20vw,110px); height:min(20vw,110px);
     border-radius:50%;
     background:radial-gradient(circle at 35% 35%, #E8FFF0 0%, #9AFFC0 45%, #4E2E7A 85%);
     box-shadow:0 0 46px 12px rgba(124,255,168,0.4);
     animation: sig-ghost-drift 10s ease-in-out infinite;
   }
-  .world-signature.sig-Joan's .bub{
+  .world-signature.sig-joans .bub{
     position:absolute; bottom:0; border-radius:50%;
     background:radial-gradient(circle at 35% 35%, rgba(154,255,192,0.85), rgba(91,46,140,0.25));
     animation: sig-bubble-rise 5.5s ease-in infinite;
   }
-  .world-signature.sig-Joan's .bub1{ left:18%; width:12px; height:12px; animation-delay:0s; }
-  .world-signature.sig-Joan's .bub2{ left:44%; width:8px; height:8px; animation-delay:1.8s; }
-  .world-signature.sig-Joan's .bub3{ left:68%; width:15px; height:15px; animation-delay:3.2s; }
+  .world-signature.sig-joans .bub1{ left:18%; width:12px; height:12px; animation-delay:0s; }
+  .world-signature.sig-joans .bub2{ left:44%; width:8px; height:8px; animation-delay:1.8s; }
+  .world-signature.sig-joans .bub3{ left:68%; width:15px; height:15px; animation-delay:3.2s; }
   /* Carnival Nightmare: alternating striped big-top peaks along the top
      edge with pulsing string lights. */
   .world-signature.sig-carnival{
@@ -4323,7 +4323,7 @@
   }
   /* Mariel's Playground: soft weightless bob-and-wobble cluster in the
      corner — deliberately NOT the comet-drift diagonal glide used by
-     Frozen Comet/Joan's, so it reads as "floating" rather than "drifting". */
+     Frozen Comet/joans, so it reads as "floating" rather than "drifting". */
   .world-signature.sig-mariel{
     top:8%; right:10%; width:min(20vw,110px); height:min(20vw,110px);
     border-radius:50%;
@@ -4409,7 +4409,7 @@
     85%{ opacity:0.95; }
   }
   /* Steampunk Cea: puffs expand and dissipate as they rise, unlike
-     the simple float-up of sig-bubble-rise (Joan's's wisps). */
+     the simple float-up of sig-bubble-rise (joans's wisps). */
   @keyframes sig-steam-puff{
     0%{ transform:translateY(0) scale(0.5); opacity:0; }
     20%{ opacity:0.7; }
@@ -4542,7 +4542,7 @@
   }
   /* Joan's Manor: a crooked gothic rooftop line with bare thin trees,
      lit by a sickly green glow. */
-  .world-terrain.terr-Joan's{
+  .world-terrain.terr-joans{
     height:26%;
     clip-path: polygon(0% 100%,0% 60%,5% 45%,9% 60%,9% 25%,11% 25%,11% 60%,18% 60%,18% 40%,26% 40%,26% 55%,26% 30%,30% 30%,30% 55%,38% 55%,38% 20%,40% 20%,40% 55%,48% 55%,48% 45%,56% 45%,56% 60%,64% 60%,64% 35%,66% 35%,66% 60%,74% 60%,74% 42%,82% 42%,82% 58%,90% 58%,90% 38%,100% 38%,100% 100%);
     background: linear-gradient(180deg, rgba(154,255,192,0) 0%, rgba(74,48,108,0.62) 36%, rgba(10,5,18,0.9) 100%);
@@ -4624,7 +4624,7 @@
   .world-ambience-tint.env-ashfallwastes{ background: radial-gradient(circle at 50% 60%, rgba(255,107,53,0.10), transparent 60%), linear-gradient(180deg, rgba(30,26,22,0.2), rgba(14,12,10,0.4)); }
   .world-ambience-tint.env-crystalcaverns{ background: radial-gradient(circle at 50% 30%, rgba(255,184,240,0.18), transparent 60%), linear-gradient(180deg, rgba(40,10,50,0.16), rgba(20,4,25,0.34)); }
   .world-ambience-tint.env-ruins{ background: radial-gradient(circle at 50% 75%, rgba(232,196,104,0.16), transparent 60%), linear-gradient(180deg, rgba(50,38,10,0.15), rgba(20,15,5,0.32)); }
-  .world-ambience-tint.env-Joan's{ background: radial-gradient(circle at 50% 25%, rgba(124,255,168,0.14), transparent 60%), linear-gradient(180deg, rgba(30,15,50,0.22), rgba(10,5,18,0.4)); }
+  .world-ambience-tint.env-joans{ background: radial-gradient(circle at 50% 25%, rgba(124,255,168,0.14), transparent 60%), linear-gradient(180deg, rgba(30,15,50,0.22), rgba(10,5,18,0.4)); }
   .world-ambience-tint.env-carnival{ background: radial-gradient(circle at 50% 20%, rgba(255,92,138,0.18), transparent 60%), linear-gradient(180deg, rgba(50,10,20,0.16), rgba(25,5,12,0.32)); }
   .world-ambience-tint.env-steampunk{ background: radial-gradient(circle at 50% 30%, rgba(217,160,91,0.16), transparent 60%), linear-gradient(180deg, rgba(40,24,10,0.16), rgba(20,12,5,0.32)); }
   .world-ambience-tint.env-biocave{ background: radial-gradient(circle at 50% 40%, rgba(107,255,192,0.16), transparent 60%), linear-gradient(180deg, rgba(10,25,35,0.16), rgba(5,12,20,0.32)); }
@@ -5746,7 +5746,7 @@
                 <button class="diff-btn world-btn world-locked" data-world="ashfallwastes" data-cost="400" data-name="Ashfall Wastes">🌫️ Ashfall Wastes <span class="world-lock-tag">🔒 400</span></button>
                 <button class="diff-btn world-btn world-locked" data-world="crystalcaverns" data-cost="450" data-name="Crystal Caverns">💎 Crystal Caverns <span class="world-lock-tag">🔒 450</span></button>
                 <button class="diff-btn world-btn world-locked" data-world="ruins" data-cost="350" data-name="Ancient Ruins">🏛️ Ancient Ruins <span class="world-lock-tag">🔒 350</span></button>
-                <button class="diff-btn world-btn world-locked" data-world="Joan's" data-cost="400" data-name="Joan's Manor">👻 Joan's Manor <span class="world-lock-tag">🔒 400</span></button>
+                <button class="diff-btn world-btn world-locked" data-world="joans" data-cost="400" data-name="Joan's Manor">👻 Joan's Manor <span class="world-lock-tag">🔒 400</span></button>
                 <button class="diff-btn world-btn world-locked" data-world="carnival" data-cost="450" data-name="Carnival Nightmare">🎪 Carnival Nightmare <span class="world-lock-tag">🔒 450</span></button>
                 <button class="diff-btn world-btn world-locked" data-world="steampunk" data-cost="500" data-name="Steampunk Cea">⚙️ Steampunk Cea <span class="world-lock-tag">🔒 500</span></button>
                 <button class="diff-btn world-btn world-locked" data-world="biocave" data-cost="400" data-name="Bioluminescent Cave">🍄 Bioluminescent Cave <span class="world-lock-tag">🔒 400</span></button>
@@ -6267,7 +6267,7 @@ const CELEBRATION_WORLD_ACCENT = {
   ashfallwastes: '#C3D825',
   crystalcaverns: '#FFB8F0',
   ruins: '#E8C468',
-  Joan's: '#9AFFC0',
+  joans: '#9AFFC0',
   carnival: '#FFD166',
   steampunk: '#D9A05B',
   biocave: '#6BFFC0',
@@ -6398,7 +6398,7 @@ const WORLD_VOICE_STYLES = {
   ashfallwastes:   { pitch:0.75, rate:0.90, prefer:/male|daniel|fred|alex|david|george/i },
   crystalcaverns: { pitch:1.45, rate:1.00, prefer:/female|samantha|victoria|karen|zira|fiona|moira|child|kid/i },
   ruins:        { pitch:0.80, rate:0.90, prefer:/male|daniel|fred|alex|david|george/i },
-  Joan's:      { pitch:0.60, rate:0.80, prefer:/male|daniel|fred|alex|david|george/i },
+  joans:      { pitch:0.60, rate:0.80, prefer:/male|daniel|fred|alex|david|george/i },
   carnival:     { pitch:1.55, rate:1.15, prefer:/female|samantha|victoria|karen|zira|fiona|child|kid/i },
   steampunk:    { pitch:0.95, rate:1.00, prefer:/male|daniel|fred|alex|david|george|diego/i },
   biocave:      { pitch:1.20, rate:0.90, prefer:/female|samantha|victoria|karen|zira|fiona|moira|child|kid/i },
@@ -7488,7 +7488,7 @@ const BOSS_THEMES = {
     "hpGradient": "linear-gradient(90deg, #E8C468, #2E7D6B)",
     "glow": "rgba(232,196,104,0.8)"
   },
-  "Joan's": {
+  "joans": {
     "emojis": [
       "👻",
       "🦇",
@@ -9979,7 +9979,7 @@ const pauseSpace = (function(){
 
 
   // Joan's Manor: ghostly green/purple palette.
-  const Joan's_ITYPES = [
+  const joans_ITYPES = [
     { key:'zorp',  name:'Wispling',   color:'#9AFFC0' },
     { key:'blip',  name:'Shadewisp',  color:'#5B2E8C' },
     { key:'volt',  name:'Ghoulbit',   color:'#7CFFA8' },
@@ -9987,7 +9987,7 @@ const pauseSpace = (function(){
     { key:'crag',  name:'Cryptling',  color:'#4E2E7A' },
     { key:'nebu',  name:'Mistwraith', color:'#C8FFDD' },
   ];
-  const Joan's_ELITE_ITYPES = [
+  const joans_ELITE_ITYPES = [
     { key:'grym',  name:'Spectral Lord', color:'#4E2E7A' },
     { key:'obsi',  name:'Bonewhite',     color:'#E8FFF0' },
     { key:'ferro', name:'Grimshackle',   color:'#5B2E8C' },
@@ -9995,7 +9995,7 @@ const pauseSpace = (function(){
     { key:'scorc', name:'Hollowking',    color:'#9AFFC0' },
     { key:'nyx',   name:'Nightstar',     color:'#C8FFDD' },
   ];
-  const Joan's_TIER2_ITYPES = [
+  const joans_TIER2_ITYPES = [
     { key:'t2a', name:'Prime Spectral Lord', color:'#6E5492' },
     { key:'t2b', name:'Prime Bonewhite', color:'#ECFFF3' },
     { key:'t2c', name:'Prime Grimshackle', color:'#7954A1' },
@@ -10003,7 +10003,7 @@ const pauseSpace = (function(){
     { key:'t2e', name:'Prime Hollowking', color:'#ACFFCB' },
     { key:'t2f', name:'Prime Nightstar', color:'#D2FFE3' },
   ];
-  const Joan's_TIER3_ITYPES = [
+  const joans_TIER3_ITYPES = [
     { key:'t3a', name:'Ascended Spectral Lord', color:'#3D245F' },
     { key:'t3b', name:'Ascended Bonewhite', color:'#B5C7BB' },
     { key:'t3c', name:'Ascended Grimshackle', color:'#47246D' },
@@ -10011,7 +10011,7 @@ const pauseSpace = (function(){
     { key:'t3e', name:'Ascended Hollowking', color:'#78C796' },
     { key:'t3f', name:'Ascended Nightstar', color:'#9CC7AC' },
   ];
-  const Joan's_TIER4_ITYPES = [
+  const joans_TIER4_ITYPES = [
     { key:'t4a', name:'Overlord Spectral Lord', color:'#802158' },
     { key:'t4b', name:'Overlord Bonewhite', color:'#EEB8AD' },
     { key:'t4c', name:'Overlord Grimshackle', color:'#892165' },
@@ -10019,7 +10019,7 @@ const pauseSpace = (function(){
     { key:'t4e', name:'Overlord Hollowking', color:'#B6B88A' },
     { key:'t4f', name:'Overlord Nightstar', color:'#D7B89F' },
   ];
-  const Joan's_TIER5_ITYPES = [
+  const joans_TIER5_ITYPES = [
     { key:'t5a', name:'Omega Spectral Lord', color:'#9E8CB6' },
     { key:'t5b', name:'Omega Bonewhite', color:'#F2FFF7' },
     { key:'t5c', name:'Omega Grimshackle', color:'#A58CC0' },
@@ -10027,7 +10027,7 @@ const pauseSpace = (function(){
     { key:'t5e', name:'Omega Hollowking', color:'#C7FFDC' },
     { key:'t5f', name:'Omega Nightstar', color:'#E1FFEC' },
   ];
-  const Joan's_TIER6_ITYPES = [
+  const joans_TIER6_ITYPES = [
     { key:'t6a', name:'Exalted Spectral Lord', color:'#3765A2' },
     { key:'t6b', name:'Exalted Bonewhite', color:'#A2F7F4' },
     { key:'t6c', name:'Exalted Grimshackle', color:'#4065AE' },
@@ -10035,7 +10035,7 @@ const pauseSpace = (function(){
     { key:'t6e', name:'Exalted Hollowking', color:'#6CF7D3' },
     { key:'t6f', name:'Exalted Nightstar', color:'#8CF7E7' },
   ];
-  const Joan's_TIER7_ITYPES = [
+  const joans_TIER7_ITYPES = [
     { key:'t7a', name:'Celestial Spectral Lord', color:'#83209A' },
     { key:'t7b', name:'Celestial Bonewhite', color:'#EFB2ED' },
     { key:'t7c', name:'Celestial Grimshackle', color:'#8C20A7' },
@@ -10043,7 +10043,7 @@ const pauseSpace = (function(){
     { key:'t7e', name:'Celestial Hollowking', color:'#B8B2CB' },
     { key:'t7f', name:'Celestial Nightstar', color:'#D8B2DF' },
   ];
-  const Joan's_TIER8_ITYPES = [
+  const joans_TIER8_ITYPES = [
     { key:'t8a', name:'Transcendent Spectral Lord', color:'#8C694F' },
     { key:'t8b', name:'Transcendent Bonewhite', color:'#F0F19C' },
     { key:'t8c', name:'Transcendent Grimshackle', color:'#94695B' },
@@ -10051,7 +10051,7 @@ const pauseSpace = (function(){
     { key:'t8e', name:'Transcendent Hollowking', color:'#BDF17D' },
     { key:'t8f', name:'Transcendent Nightstar', color:'#DBF190' },
   ];
-  const Joan's_TIER9_ITYPES = [
+  const joans_TIER9_ITYPES = [
     { key:'t9a', name:'Voidborn Spectral Lord', color:'#2F1C49' },
     { key:'t9b', name:'Voidborn Bonewhite', color:'#8B9990' },
     { key:'t9c', name:'Voidborn Grimshackle', color:'#371C54' },
@@ -10059,7 +10059,7 @@ const pauseSpace = (function(){
     { key:'t9e', name:'Voidborn Hollowking', color:'#5C9973' },
     { key:'t9f', name:'Voidborn Nightstar', color:'#789985' },
   ];
-  const Joan's_TIER10_ITYPES = [
+  const joans_TIER10_ITYPES = [
     { key:'t10a', name:'Eternal Spectral Lord', color:'#B8ABCA' },
     { key:'t10b', name:'Eternal Bonewhite', color:'#F6FFF9' },
     { key:'t10c', name:'Eternal Grimshackle', color:'#BDABD1' },
@@ -10449,11 +10449,11 @@ const pauseSpace = (function(){
     ashfallwastes: { label:'Ashfall Wastes', types: ASHFALLWASTES_ITYPES, eliteTypes: ASHFALLWASTES_ELITE_ITYPES, tier2Types: ASHFALLWASTES_TIER2_ITYPES, tier3Types: ASHFALLWASTES_TIER3_ITYPES, tier4Types: ASHFALLWASTES_TIER4_ITYPES, tier5Types: ASHFALLWASTES_TIER5_ITYPES, tier6Types: ASHFALLWASTES_TIER6_ITYPES, tier7Types: ASHFALLWASTES_TIER7_ITYPES, tier8Types: ASHFALLWASTES_TIER8_ITYPES, tier9Types: ASHFALLWASTES_TIER9_ITYPES, tier10Types: ASHFALLWASTES_TIER10_ITYPES, },
     crystalcaverns: { label:'Crystal Caverns', types: CRYSTALCAVERNS_ITYPES, eliteTypes: CRYSTALCAVERNS_ELITE_ITYPES, tier2Types: CRYSTALCAVERNS_TIER2_ITYPES, tier3Types: CRYSTALCAVERNS_TIER3_ITYPES, tier4Types: CRYSTALCAVERNS_TIER4_ITYPES, tier5Types: CRYSTALCAVERNS_TIER5_ITYPES, tier6Types: CRYSTALCAVERNS_TIER6_ITYPES, tier7Types: CRYSTALCAVERNS_TIER7_ITYPES, tier8Types: CRYSTALCAVERNS_TIER8_ITYPES, tier9Types: CRYSTALCAVERNS_TIER9_ITYPES, tier10Types: CRYSTALCAVERNS_TIER10_ITYPES, },
     ruins: { label:'Ancient Ruins', types: RUINS_ITYPES, eliteTypes: RUINS_ELITE_ITYPES, tier2Types: RUINS_TIER2_ITYPES, tier3Types: RUINS_TIER3_ITYPES, tier4Types: RUINS_TIER4_ITYPES, tier5Types: RUINS_TIER5_ITYPES, tier6Types: RUINS_TIER6_ITYPES, tier7Types: RUINS_TIER7_ITYPES, tier8Types: RUINS_TIER8_ITYPES, tier9Types: RUINS_TIER9_ITYPES, tier10Types: RUINS_TIER10_ITYPES, },
-    Joan's: { label:'Joan's Manor', types: Joan's_ITYPES, eliteTypes: Joan's_ELITE_ITYPES, tier2Types: Joan's_TIER2_ITYPES, tier3Types: Joan's_TIER3_ITYPES, tier4Types: Joan's_TIER4_ITYPES, tier5Types: Joan's_TIER5_ITYPES, tier6Types: Joan's_TIER6_ITYPES, tier7Types: Joan's_TIER7_ITYPES, tier8Types: Joan's_TIER8_ITYPES, tier9Types: Joan's_TIER9_ITYPES, tier10Types: Joan's_TIER10_ITYPES, },
+    joans: { label:'Joan\'s Manor', types: joans_ITYPES, eliteTypes: joans_ELITE_ITYPES, tier2Types: joans_TIER2_ITYPES, tier3Types: joans_TIER3_ITYPES, tier4Types: joans_TIER4_ITYPES, tier5Types: joans_TIER5_ITYPES, tier6Types: joans_TIER6_ITYPES, tier7Types: joans_TIER7_ITYPES, tier8Types: joans_TIER8_ITYPES, tier9Types: joans_TIER9_ITYPES, tier10Types: joans_TIER10_ITYPES, },
     carnival: { label:'Carnival Nightmare', types: CARNIVAL_ITYPES, eliteTypes: CARNIVAL_ELITE_ITYPES, tier2Types: CARNIVAL_TIER2_ITYPES, tier3Types: CARNIVAL_TIER3_ITYPES, tier4Types: CARNIVAL_TIER4_ITYPES, tier5Types: CARNIVAL_TIER5_ITYPES, tier6Types: CARNIVAL_TIER6_ITYPES, tier7Types: CARNIVAL_TIER7_ITYPES, tier8Types: CARNIVAL_TIER8_ITYPES, tier9Types: CARNIVAL_TIER9_ITYPES, tier10Types: CARNIVAL_TIER10_ITYPES, },
     steampunk: { label:'Steampunk Cea', types: STEAMPUNK_ITYPES, eliteTypes: STEAMPUNK_ELITE_ITYPES, tier2Types: STEAMPUNK_TIER2_ITYPES, tier3Types: STEAMPUNK_TIER3_ITYPES, tier4Types: STEAMPUNK_TIER4_ITYPES, tier5Types: STEAMPUNK_TIER5_ITYPES, tier6Types: STEAMPUNK_TIER6_ITYPES, tier7Types: STEAMPUNK_TIER7_ITYPES, tier8Types: STEAMPUNK_TIER8_ITYPES, tier9Types: STEAMPUNK_TIER9_ITYPES, tier10Types: STEAMPUNK_TIER10_ITYPES, },
     biocave: { label:'Bioluminescent Cave', types: BIOCAVE_ITYPES, eliteTypes: BIOCAVE_ELITE_ITYPES, tier2Types: BIOCAVE_TIER2_ITYPES, tier3Types: BIOCAVE_TIER3_ITYPES, tier4Types: BIOCAVE_TIER4_ITYPES, tier5Types: BIOCAVE_TIER5_ITYPES, tier6Types: BIOCAVE_TIER6_ITYPES, tier7Types: BIOCAVE_TIER7_ITYPES, tier8Types: BIOCAVE_TIER8_ITYPES, tier9Types: BIOCAVE_TIER9_ITYPES, tier10Types: BIOCAVE_TIER10_ITYPES, },
-    mariel: { label:'Mariel's Playground', types: mariel_ITYPES, eliteTypes: mariel_ELITE_ITYPES, tier2Types: mariel_TIER2_ITYPES, tier3Types: mariel_TIER3_ITYPES, tier4Types: mariel_TIER4_ITYPES, tier5Types: mariel_TIER5_ITYPES, tier6Types: mariel_TIER6_ITYPES, tier7Types: mariel_TIER7_ITYPES, tier8Types: mariel_TIER8_ITYPES, tier9Types: mariel_TIER9_ITYPES, tier10Types: mariel_TIER10_ITYPES, },
+    mariel: { label:'Mariel\'s Playground', types: mariel_ITYPES, eliteTypes: mariel_ELITE_ITYPES, tier2Types: mariel_TIER2_ITYPES, tier3Types: mariel_TIER3_ITYPES, tier4Types: mariel_TIER4_ITYPES, tier5Types: mariel_TIER5_ITYPES, tier6Types: mariel_TIER6_ITYPES, tier7Types: mariel_TIER7_ITYPES, tier8Types: mariel_TIER8_ITYPES, tier9Types: mariel_TIER9_ITYPES, tier10Types: mariel_TIER10_ITYPES, },
   };
   let currentWorld = 'milkyway';
 
@@ -10492,7 +10492,7 @@ const pauseSpace = (function(){
     ashfallwastes:   { kind:'player', statusClass:'status-ashfall',  toast:'🌫️ Choking on ash! Vision blurring!', tint:'radial-gradient(circle, rgba(201,196,188,0.22), rgba(60,50,40,0.35))', durMul:1.4 },
     crystalcaverns: { kind:'cloak', sweepClass:'crystal',          toast:'💎 A crystal glare blinds you!', durMul:0.85 },
     ruins:        { kind:'cloak', sweepClass:'dust',               toast:'🏛️ A dust cloud obscures your view!', durMul:1.15 },
-    Joan's:      { kind:'cloak', sweepClass:'fog',                toast:'👻 A ghostly fog hides the invaders!', durMul:1.3 },
+    joans:      { kind:'cloak', sweepClass:'fog',                toast:'👻 A ghostly fog hides the invaders!', durMul:1.3 },
     carnival:     { kind:'cloak', sweepClass:'confetti',           toast:'🎪 A confetti cannon blinds you!', durMul:0.75, shake:'heavy' },
     steampunk:    { kind:'cloak', sweepClass:'steam',              toast:'⚙️ A steam cloud fogs your view!', durMul:1.05 },
     biocave:      { kind:'cloak', sweepClass:'spores',              toast:'🍄 A cloud of glowing spores blinds you!', durMul:1.1 },
@@ -10622,7 +10622,7 @@ const pauseSpace = (function(){
     ashfallwastes:   { cls:'amb-fall', look:'amb-ash',    count:14 },
     crystalcaverns: { cls:'amb-rise', look:'amb-crystal', count:12 },
     ruins:        { cls:'amb-blow', look:'amb-dust',    count:14 },
-    Joan's:      { cls:'amb-rise', look:'amb-wisp',    count:10 },
+    joans:      { cls:'amb-rise', look:'amb-wisp',    count:10 },
     carnival:     { cls:'amb-fall', look:'amb-confetti',count:14 },
     steampunk:    { cls:'amb-rise', look:'amb-steam',   count:10 },
     biocave:      { cls:'amb-rise', look:'amb-spore',  count:12 },
@@ -10631,12 +10631,12 @@ const pauseSpace = (function(){
   // Worlds with parallax layer art defined (see .pfar-<world>/.pnear-<world>
   // CSS). All 9 non-milkyway worlds now have art; milkyway keeps its plain
   // neutral starfield as the baseline "home" world.
-  const WORLD_PARALLAX = ['blackhole', 'frozencomet', 'moltencore', 'cybergrid', 'desertwastes', 'stormnebula', 'Romaparadise', 'ashfallwastes', 'crystalcaverns', 'ruins', 'Joan's', 'carnival', 'steampunk', 'biocave', 'mariel'];
+  const WORLD_PARALLAX = ['blackhole', 'frozencomet', 'moltencore', 'cybergrid', 'desertwastes', 'stormnebula', 'Romaparadise', 'ashfallwastes', 'crystalcaverns', 'ruins', 'joans', 'carnival', 'steampunk', 'biocave', 'mariel'];
   // Worlds with a ground/structure terrain silhouette (see .terr-<world>
   // CSS) along the bottom edge. Mariel's has no ground by theme — it gets
   // floating shapes instead (see WORLD_TERRAIN_FLOAT below). Milkyway
   // stays the plain baseline world, same as WORLD_PARALLAX.
-  const WORLD_TERRAIN = ['blackhole', 'frozencomet', 'moltencore', 'cybergrid', 'desertwastes', 'stormnebula', 'Romaparadise', 'ashfallwastes', 'crystalcaverns', 'ruins', 'Joan's', 'carnival', 'steampunk', 'biocave'];
+  const WORLD_TERRAIN = ['blackhole', 'frozencomet', 'moltencore', 'cybergrid', 'desertwastes', 'stormnebula', 'Romaparadise', 'ashfallwastes', 'crystalcaverns', 'ruins', 'joans', 'carnival', 'steampunk', 'biocave'];
   const WORLD_TERRAIN_FLOAT = ['mariel'];
   function clearWorldAmbience(){
     const oldTint = document.getElementById('world-ambience-tint-sp');
@@ -10672,7 +10672,7 @@ const pauseSpace = (function(){
     ashfallwastes: '<div class="bub bub1"></div><div class="bub bub2"></div><div class="bub bub3"></div><div class="bub bub4"></div>',
     crystalcaverns: '',
     ruins: '',
-    Joan's: '<div class="bub bub1"></div><div class="bub bub2"></div><div class="bub bub3"></div>',
+    joans: '<div class="bub bub1"></div><div class="bub bub2"></div><div class="bub bub3"></div>',
     carnival: '',
     steampunk: '<div class="bub bub1"></div><div class="bub bub2"></div><div class="bub bub3"></div>',
     biocave: '',
@@ -10890,7 +10890,7 @@ const pauseSpace = (function(){
     milkyway: 'milky-invader', blackhole: 'void-invader', frozencomet: 'frost-invader',
     moltencore: 'magma-invader', cybergrid: 'grid-invader', desertwastes: 'dune-invader',
     stormnebula: 'volt-invader', Romaparadise: 'aurora-invader', ashfallwastes: 'ash-invader',
-    crystalcaverns: 'gem-invader', ruins: 'relic-invader', Joan's: 'phantom-invader',
+    crystalcaverns: 'gem-invader', ruins: 'relic-invader', joans: 'phantom-invader',
     carnival: 'clown-invader', steampunk: 'gearbot-invader',
     biocave: 'sporecap-invader', mariel: 'astro-invader'
   };
@@ -11038,7 +11038,7 @@ const pauseSpace = (function(){
   // decorative planet) between the different unlocked worlds.
   const worldRowEl = document.getElementById('world-row-sp');
   const planetEl = document.querySelector('#view-space .planet');
-  const WORLD_PLANET_LOOKS = ['blackhole-look', 'frozencomet-look', 'moltencore-look', 'cybergrid-look', 'desertwastes-look', 'stormnebula-look', 'Romaparadise-look', 'ashfallwastes-look', 'crystalcaverns-look', 'ruins-look', 'Joan's-look', 'carnival-look', 'steampunk-look', 'biocave-look', 'mariel-look'];
+  const WORLD_PLANET_LOOKS = ['blackhole-look', 'frozencomet-look', 'moltencore-look', 'cybergrid-look', 'desertwastes-look', 'stormnebula-look', 'Romaparadise-look', 'ashfallwastes-look', 'crystalcaverns-look', 'ruins-look', 'joans-look', 'carnival-look', 'steampunk-look', 'biocave-look', 'mariel-look'];
   // Two-stop accent gradient per world, reused for the in-game HUD chips
   // (level/streak) so the UI chrome itself feels tied to the current
   // world instead of always being the same neutral blue.
@@ -11054,13 +11054,13 @@ const pauseSpace = (function(){
     ashfallwastes:   ['#C9C4BC', '#FF6B35'],
     crystalcaverns: ['#FFB8F0', '#9C4DCC'],
     ruins:        ['#E8C468', '#2E7D6B'],
-    Joan's:      ['#9AFFC0', '#5B2E8C'],
+    joans:      ['#9AFFC0', '#5B2E8C'],
     carnival:     ['#FFD166', '#FF5C8A'],
     biocave:      ['#6BFFC0', '#2ED9C3'],
     mariel:        ['#FF9ED6', '#4DE0FF'],
     steampunk:    ['#D9A05B', '#4A90A4'],
   };
-  const WORLD_STAR_CLASSES = ['world-blackhole','world-frozencomet','world-moltencore','world-cybergrid','world-desertwastes','world-stormnebula','world-Romaparadise','world-ashfallwastes','world-crystalcaverns','world-ruins','world-Joan's','world-carnival','world-steampunk','world-biocave','world-mariel'];
+  const WORLD_STAR_CLASSES = ['world-blackhole','world-frozencomet','world-moltencore','world-cybergrid','world-desertwastes','world-stormnebula','world-Romaparadise','world-ashfallwastes','world-crystalcaverns','world-ruins','world-joans','world-carnival','world-steampunk','world-biocave','world-mariel'];
   function applyWorldAccent(world){
     const accent = WORLD_ACCENT[world] || WORLD_ACCENT.milkyway;
     view.style.setProperty('--world-accent-1', accent[0]);
@@ -11088,7 +11088,7 @@ const pauseSpace = (function(){
       else if(world === 'ashfallwastes') planetEl.classList.add('ashfallwastes-look');
       else if(world === 'crystalcaverns') planetEl.classList.add('crystalcaverns-look');
       else if(world === 'ruins') planetEl.classList.add('ruins-look');
-      else if(world === 'Joan's') planetEl.classList.add('Joan's-look');
+      else if(world === 'joans') planetEl.classList.add('joans-look');
       else if(world === 'carnival') planetEl.classList.add('carnival-look');
       else if(world === 'steampunk') planetEl.classList.add('steampunk-look');
       else if(world === 'biocave') planetEl.classList.add('biocave-look');
@@ -11588,7 +11588,7 @@ const pauseSpace = (function(){
     ashfallwastes:   { wave:'sawtooth', startMul:1.1, endMul:0.4,  dur:0.18, wobble:true },        // gritty, wind-scoured drop (was square, too close to Molten Core's growl)
     crystalcaverns: { wave:'sine',     startMul:2.6, endMul:2.0, dur:0.11, detune:16 },          // resonant glassy chime (was triangle, too close to Frozen Comet's icy chime)
     ruins:        { wave:'square',   startMul:1.4, endMul:0.8,  dur:0.13, detune:-8 },           // dry stone-on-stone knock
-    Joan's:      { wave:'sine',     startMul:0.9, endMul:0.35, dur:0.28, detune:-20, wobble:true }, // eerie moaning warble
+    joans:      { wave:'sine',     startMul:0.9, endMul:0.35, dur:0.28, detune:-20, wobble:true }, // eerie moaning warble
     carnival:     { wave:'square',   startMul:2.8, endMul:1.4,  dur:0.09, detune:26 },           // bright honking toy-horn zap
     steampunk:    { wave:'sawtooth', startMul:1.5, endMul:0.7,  dur:0.14, detune:-6 },           // clanky metallic hiss
     biocave:      { wave:'sine',     startMul:1.3, endMul:1.0,  dur:0.20, wobble:true },        // soft glowing organic warble
@@ -11687,7 +11687,7 @@ const pauseSpace = (function(){
     ashfallwastes:   { freq:95,  type:'square',   lfoRate:1.2,  lfoDepth:10, vol:0.028 },
     crystalcaverns: { freq:340, type:'triangle', lfoRate:0.6, lfoDepth:25, vol:0.028 },
     ruins:        { freq:75,  type:'sine',     lfoRate:0.1,  lfoDepth:5,  vol:0.04 },
-    Joan's:      { freq:60,  type:'sine',     lfoRate:0.25, lfoDepth:14, vol:0.045 },
+    joans:      { freq:60,  type:'sine',     lfoRate:0.25, lfoDepth:14, vol:0.045 },
     carnival:     { freq:160, type:'square',   lfoRate:2.5,  lfoDepth:20, vol:0.03 },
     steampunk:    { freq:100, type:'sawtooth', lfoRate:0.9,  lfoDepth:12, vol:0.035 },
     biocave:      { freq:150, type:'sine',     lfoRate:0.5,  lfoDepth:18, vol:0.03 },
@@ -12359,7 +12359,7 @@ const pauseSpace = (function(){
     moltencore:   { chainzap: 1.3 },
     crystalcaverns: { explode: 1.3 },
     ruins:        { lifesupport: 1.3 },
-    Joan's:      { deepfreeze: 1.3 },
+    joans:      { deepfreeze: 1.3 },
     carnival:     { tidalwave: 1.3 },
     steampunk:    { rocketbarrage: 1.3 },
   };
@@ -13099,7 +13099,7 @@ const pauseSpace = (function(){
     ashfallwastes:   { speedMult:0.97, drift:6  },
     crystalcaverns: { speedMult:1.0, drift:12 },
     ruins:        { speedMult:1.02, drift:4  },
-    Joan's:      { speedMult:0.93, drift:16 },
+    joans:      { speedMult:0.93, drift:16 },
     carnival:     { speedMult:1.12, drift:18 },
     steampunk:    { speedMult:1.05, drift:8  },
     biocave:      { speedMult:0.90, drift:8  },
